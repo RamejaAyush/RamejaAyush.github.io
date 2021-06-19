@@ -23,3 +23,63 @@
  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
  background-color: #474747;
 }
+
+body {
+ font-family: 'Spartan', sans-serif;
+}
+
+body.light {
+ color: black;
+ background-color: #f4f4f4;
+}
+
+body.black {
+ color: white;
+ background-color: #000;
+}
+
+nav {
+ width: 100%;
+ height: 15vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav .logo {
+ margin-left: 5%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+nav .logo h1 {
+ font-size: 55px;
+ font-family: 'Righteous', sans-serif;
+}
+
+nav .nav-links {
+ width: 30%;
+ height: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav .nav-links a {
+ text-decoration: none;
+ color: inherit;
+ position: relative;
+ z-index: 1;
+ padding: 5px;
+}
+
+nav .switch {
+ margin-right: 5%;
+}
+
+nav .switch i {
+ font-size: 25px;
+ cursor: pointer;
+}
