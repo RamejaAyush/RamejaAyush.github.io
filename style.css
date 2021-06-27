@@ -84,6 +84,27 @@ nav .nav-links a {
  padding: 5px;
 }
 
+nav .nav-links a::before,
+nav .nav-links a::after {
+ content: '';
+ position: absolute;
+ z-index: -1;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 2px;
+ background: black;
+ transform: scaleX(0);
+ transition: transform 250ms ease-in-out;
+}
+
+nav .nav-links a:hover::before,
+nav .nav-links a:hover::after,
+nav .nav-links a:focus::before,
+nav .nav-links a:focus::after {
+ transform: scaleX(100%);
+}
+
 nav .switch {
  margin-right: 5%;
  transition: all cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.75s;
