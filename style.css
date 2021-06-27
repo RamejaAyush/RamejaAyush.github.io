@@ -157,3 +157,51 @@ nav .switch i:hover {
  object-fit: cover;
  filter: brightness(1.3);
 }
+
+.homepage .profile-box .desc {
+ width: 100%;
+ height: 10%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.homepage .profile-box .skills {
+ width: 100%;
+ height: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.homepage .profile-box .skills .all-skills {
+ width: 50%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.homepage .profile-box .skills .all-skills i {
+ font-size: 35px;
+ transition: color 150ms ease-in-out;
+}
+
+.fa-html5:hover {
+ color: #dd4b25;
+}
+
+.fa-css3-alt:hover {
+ color: #2593dd;
+}
+
+.fa-sass:hover {
+ color: pink;
+}
+
+.fa-js:hover {
+ color: yellow;
+}
+
+.fa-python:hover {
+ color: blue;
+}
