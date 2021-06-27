@@ -26,6 +26,7 @@
 
 body {
  font-family: 'Spartan', sans-serif;
+ transition: all cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.75s;
 }
 
 body.light {
@@ -77,6 +78,7 @@ nav .nav-links a {
 
 nav .switch {
  margin-right: 5%;
+ transition: all cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.75s;
 }
 
 nav .switch i {
