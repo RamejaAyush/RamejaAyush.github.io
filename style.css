@@ -55,9 +55,17 @@ nav .logo {
  align-items: center;
 }
 
-nav .logo h1 {
+nav .logo a {
+ color: inherit;
+ text-decoration: none;
  font-size: 55px;
+ position: relative;
  font-family: 'Righteous', sans-serif;
+ transition: transform 250ms ease-in-out;
+}
+
+nav .logo a:hover {
+ transform: scale(1.1);
 }
 
 nav .nav-links {
@@ -84,4 +92,9 @@ nav .switch {
 nav .switch i {
  font-size: 25px;
  cursor: pointer;
+ transition: transform 250ms ease-in-out;
+}
+
+nav .switch i:hover {
+ transform: scale(1.2);
 }
