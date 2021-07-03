@@ -1,14 +1,14 @@
 // all variables
-const themeSwitch = document.querySelector('#switch');
+const themeSwitch = document.querySelector('#theme');
 const body = document.body;
 
 // functions
 function changeTheme() {
- body.classList.toggle('black');
+ body.classList.toggle('dark');
 }
 
 function changeIcon() {
- if (body.classList.contains('black')) {
+ if (body.classList.contains('dark')) {
   themeSwitch.classList.replace('fa-sun', 'fa-moon');
  } else {
   themeSwitch.classList.replace('fa-moon', 'fa-sun');
