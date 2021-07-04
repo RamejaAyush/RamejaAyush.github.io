@@ -4,7 +4,11 @@ const body = document.body;
 
 // functions
 function changeTheme() {
- body.classList.toggle('dark');
+ if (body.classList.contains('dark')) {
+  body.classList.replace('dark', 'light');
+ } else {
+  body.classList.replace('light', 'dark');
+ }
 }
 
 function changeIcon() {
