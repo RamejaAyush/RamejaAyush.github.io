@@ -202,36 +202,15 @@ main {
     align-items: center;
 
     .card-profile {
-     width: 65%;
-     height: 65%;
-     background: var(--pro-bg);
-     border-radius: 7px;
-
-     .pro-img {
-      width: 100%;
-      height: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-       width: 100%;
-       height: 100%;
-       object-fit: contain;
-       object-position: top;
-      }
-     }
-
-     .name {
-      width: 100%;
-      height: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      h1 {
-       color: var(--pro-text);
-      }
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     img {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
      }
     }
    }
