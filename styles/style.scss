@@ -5,6 +5,7 @@
 *::before,
 *::after {
  box-sizing: border-box;
+ scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
   --bg-color: #1b1b1d;
   --text-color: rgba(255, 255, 255, 0.897);
   --diff-color: var(--text-color);
+  --nav-bg: var(--bg-color);
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -32,10 +34,19 @@ body {
 }
 
 nav {
+ top: 0;
+ position: fixed;
  width: 100%;
  height: 10vh;
  display: flex;
  justify-content: space-around;
+ transition: all 0.25s ease-out;
+
+ &.scrolled {
+  background: var(--nav-bg);
+  z-index: 10;
+  height: 12vh;
+ }
 
  .logo {
   height: 100%;
@@ -99,5 +110,14 @@ nav {
    align-items: center;
    cursor: pointer;
   }
+ }
+}
+
+main {
+ section {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 5rem;
  }
 }
