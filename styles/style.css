@@ -147,4 +147,137 @@ main section {
   height: 100vh;
   padding: 5rem 5rem;
 }
+
+main .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .home .socials {
+  width: 5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .socials .all-socials {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .socials .all-socials a i {
+  font-size: 25px;
+  color: var(--text-color);
+}
+
+main .home .hero {
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .home .hero .text {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .hero .text .text-container {
+  width: 85%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .home .hero .text .text-container p {
+  font-size: 22px;
+  height: 2vh;
+}
+
+main .home .hero .text .text-container h2 {
+  height: 15vh;
+  line-height: 35px;
+}
+
+main .home .hero .text .text-container .cta {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+main .home .hero .text .text-container .cta a {
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 0.8rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+main .home .hero .text .text-container .cta a.cta1:hover {
+  background-color: var(--diff-color);
+  color: var(--bg-color);
+}
+
+main .home .hero .text .text-container .cta a.cta2 {
+  background-color: var(--diff-color);
+  color: var(--bg-color);
+}
+
+main .home .hero .photo {
+  width: 40%;
+  height: 100%;
+  background: green;
+}
 /*# sourceMappingURL=style.css.map */
