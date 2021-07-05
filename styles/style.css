@@ -21,6 +21,8 @@ body.dark {
   --text-color: rgba(255, 255, 255, 0.897);
   --diff-color: var(--text-color);
   --nav-bg: var(--bg-color);
+  --pro-bg: #429e9d;
+  --pro-text: white;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -30,6 +32,8 @@ body.light {
   --text-color: rgba(0, 0, 0, 0.897);
   --diff-color: var(--text-color);
   --nav-bg: var(--bg-color);
+  --pro-bg: #000000;
+  --pro-text: white;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -42,8 +46,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10rem;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
@@ -76,7 +82,7 @@ nav .logo a {
 }
 
 nav .nav-links {
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,14 +124,18 @@ nav .nav-links a::before, nav .nav-links a::after {
   background-color: var(--text-color);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 nav .nav-links a:hover::before, nav .nav-links a:hover::after {
-  height: 1px;
+  height: 1.5px;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 nav .nav-links #theme {
@@ -147,7 +157,7 @@ main section {
   display: block;
   width: 100%;
   height: 100vh;
-  padding: 5rem 5rem;
+  padding: 5rem 10rem;
 }
 
 main .home {
@@ -199,11 +209,15 @@ main .home .hero .text .text-container {
 main .home .hero .text .text-container p {
   font-size: 22px;
   height: 2vh;
+  font-weight: bold;
 }
 
 main .home .hero .text .text-container h2 {
-  height: 15vh;
+  font-size: 20px;
+  height: 20vh;
+  width: 80%;
   line-height: 35px;
+  font-weight: 400;
 }
 
 main .home .hero .text .text-container .cta {
@@ -246,17 +260,59 @@ main .home .hero .photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 main .home .hero .photo .card-profile {
-  width: 80%;
+  width: 65%;
+  height: 65%;
+  background: var(--pro-bg);
+  border-radius: 7px;
+}
+
+main .home .hero .photo .card-profile .pro-img {
+  width: 100%;
   height: 70%;
-  background: var(--text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .hero .photo .card-profile .pro-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .home .hero .photo .card-profile .name {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .hero .photo .card-profile .name h1 {
+  color: var(--pro-text);
 }
 /*# sourceMappingURL=style.css.map */
