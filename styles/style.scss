@@ -27,6 +27,8 @@ body {
  &.light {
   --bg-color: #edf8fc;
   --text-color: rgba(0, 0, 0, 0.897);
+  --diff-color: var(--text-color);
+  --nav-bg: var(--bg-color);
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -124,31 +126,8 @@ main {
  .home {
   display: flex;
 
-  .socials {
-   width: 5%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-   .all-socials {
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    a {
-     i {
-      font-size: 25px;
-      color: var(--text-color);
-     }
-    }
-   }
-  }
-
   .hero {
-   width: 95%;
+   width: 100%;
    height: 100%;
    display: flex;
    .text {
@@ -206,7 +185,15 @@ main {
    .photo {
     width: 40%;
     height: 100%;
-    background: green;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    .card-profile {
+     width: 80%;
+     height: 70%;
+     background: var(--text-color);
+    }
    }
   }
  }

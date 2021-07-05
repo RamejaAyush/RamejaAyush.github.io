@@ -28,6 +28,8 @@ body.dark {
 body.light {
   --bg-color: #edf8fc;
   --text-color: rgba(0, 0, 0, 0.897);
+  --diff-color: var(--text-color);
+  --nav-bg: var(--bg-color);
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -154,45 +156,8 @@ main .home {
   display: flex;
 }
 
-main .home .socials {
-  width: 5%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .home .socials .all-socials {
-  width: 100%;
-  height: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .home .socials .all-socials a i {
-  font-size: 25px;
-  color: var(--text-color);
-}
-
 main .home .hero {
-  width: 95%;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,6 +243,20 @@ main .home .hero .text .text-container .cta a.cta2 {
 main .home .hero .photo {
   width: 40%;
   height: 100%;
-  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home .hero .photo .card-profile {
+  width: 80%;
+  height: 70%;
+  background: var(--text-color);
 }
 /*# sourceMappingURL=style.css.map */
