@@ -17,10 +17,10 @@ body {
  &.dark {
   --bg-color: #1b1b1d;
   --text-color: rgba(255, 255, 255, 0.897);
-  --diff-color: var(--text-color);
+  --diff-color: #edf8fc;
   --nav-bg: var(--bg-color);
   --pro-bg: #429e9d;
-  --pro-text: white;
+  --light-shade: rgba(48, 48, 48, 0.89);
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -29,10 +29,10 @@ body {
  &.light {
   --bg-color: #edf8fc;
   --text-color: rgba(0, 0, 0, 0.897);
-  --diff-color: var(--text-color);
+  --diff-color: #1b1b1d;
   --nav-bg: var(--bg-color);
   --pro-bg: #000000;
-  --pro-text: white;
+  --light-shade: #ffffff;
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -307,8 +307,79 @@ main {
    .card {
     width: 80%;
     height: 40vh;
-    border: 1px solid var(--text-color);
+    background-color: var(--light-shade);
     border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    transition: transform 250ms ease-in-out;
+
+    &:hover {
+     transform: scale(1.025);
+    }
+
+    .img-pro {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     img {
+      display: inline-block;
+      width: 95%;
+      height: 90%;
+      object-fit: cover;
+     }
+    }
+
+    .desc-pro {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+
+     .name {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .about-pro {
+      width: 100%;
+      height: 40%;
+
+      p {
+       margin: 0 auto;
+       width: 80%;
+       text-align: center;
+       line-height: 25px;
+      }
+     }
+
+     .redirect {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15%;
+
+      a {
+       text-decoration: none;
+       color: var(--text-color);
+       padding: 0.75rem;
+       border: 1px solid var(--text-color);
+       border-radius: 5px;
+       transition: all 0.25s ease-in-out;
+      }
+      a:hover {
+       background-color: var(--text-color);
+       color: var(--bg-color);
+      }
+     }
+    }
    }
   }
  }

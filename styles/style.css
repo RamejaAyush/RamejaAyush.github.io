@@ -19,10 +19,10 @@ body {
 body.dark {
   --bg-color: #1b1b1d;
   --text-color: rgba(255, 255, 255, 0.897);
-  --diff-color: var(--text-color);
+  --diff-color: #edf8fc;
   --nav-bg: var(--bg-color);
   --pro-bg: #429e9d;
-  --pro-text: white;
+  --light-shade: rgba(48, 48, 48, 0.89);
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -30,10 +30,10 @@ body.dark {
 body.light {
   --bg-color: #edf8fc;
   --text-color: rgba(0, 0, 0, 0.897);
-  --diff-color: var(--text-color);
+  --diff-color: #1b1b1d;
   --nav-bg: var(--bg-color);
   --pro-bg: #000000;
-  --pro-text: white;
+  --light-shade: #ffffff;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -414,7 +414,110 @@ main .card-projects .card-line {
 main .card-projects .card-line .card {
   width: 80%;
   height: 40vh;
-  border: 1px solid var(--text-color);
+  background-color: var(--light-shade);
   border-radius: 10px;
+  color: var(--text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+main .card-projects .card-line .card:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+main .card-projects .card-line .card .img-pro {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card-projects .card-line .card .img-pro img {
+  display: inline-block;
+  width: 95%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .card-projects .card-line .card .desc-pro {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .card-projects .card-line .card .desc-pro .name {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card-projects .card-line .card .desc-pro .about-pro {
+  width: 100%;
+  height: 40%;
+}
+
+main .card-projects .card-line .card .desc-pro .about-pro p {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  line-height: 25px;
+}
+
+main .card-projects .card-line .card .desc-pro .redirect {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15%;
+}
+
+main .card-projects .card-line .card .desc-pro .redirect a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.75rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+main .card-projects .card-line .card .desc-pro .redirect a:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 /*# sourceMappingURL=style.css.map */
