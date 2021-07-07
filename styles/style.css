@@ -18,12 +18,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dddddd;
+  background: #5faaffde;
   border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: grey;
+  background: #0077ff;
 }
 
 body {
@@ -701,13 +701,9 @@ main .contact .options .socials {
   transition: background 250ms ease-in-out;
 }
 
-main .contact .options .socials:hover {
-  background: var(--light-shade);
-}
-
 main .contact .options .socials .social-icons {
   width: 100%;
-  height: 40%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,7 +743,7 @@ main .contact .options .socials .social-icons .links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
+  gap: 35px;
 }
 
 main .contact .options .socials .social-icons .links i {
@@ -755,11 +751,13 @@ main .contact .options .socials .social-icons .links i {
   color: var(--text-color);
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  padding: 8px;
 }
 
 main .contact .options .socials .social-icons .links i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  border-radius: 50%;
 }
 
 main .contact .options .socials .social-icons .links .fa-linkedin-in:hover {
@@ -776,7 +774,7 @@ main .contact .options .socials .social-icons .links .fa-instagram:hover {
 
 main .contact .options .socials .mail {
   width: 100%;
-  height: 60%;
+  height: 50%;
 }
 
 main .contact .options .socials .mail .header {

@@ -18,12 +18,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
- background: #dddddd;
+ background: #5faaffde;
  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
- background: grey;
+ background: #0077ff;
 }
 
 body {
@@ -528,13 +528,9 @@ main {
     border-radius: 25px;
     transition: background 250ms ease-in-out;
 
-    &:hover {
-     background: var(--light-shade);
-    }
-
     .social-icons {
      width: 100%;
-     height: 40%;
+     height: 50%;
      display: flex;
      flex-direction: column;
 
@@ -556,15 +552,17 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 40px;
+      gap: 35px;
 
       i {
        font-size: 38px;
        color: var(--text-color);
        transition: all 150ms ease-in-out;
+       padding: 8px;
 
        &:hover {
-        transform: scale(1.1);
+        transform: translateY(-5px);
+        border-radius: 50%;
        }
       }
 
@@ -584,7 +582,7 @@ main {
 
     .mail {
      width: 100%;
-     height: 60%;
+     height: 50%;
 
      .header {
       width: 100%;
