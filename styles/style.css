@@ -545,6 +545,7 @@ main .contact .header {
 }
 
 main .contact .header h1 {
+  text-align: center;
   font-size: 40px;
 }
 
@@ -559,7 +560,13 @@ main .contact .options {
 main .contact .options .form-sec {
   width: 50%;
   height: 100%;
-  border: 1px solid var(--text-color);
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+  border-radius: 25px;
+}
+
+main .contact .options .form-sec:hover, main .contact .options .form-sec:focus {
+  background-color: var(--light-shade);
 }
 
 main .contact .options .form-sec form {
@@ -664,7 +671,7 @@ main .contact .options .form-sec form .submit {
 main .contact .options .form-sec form .submit input {
   padding: 0.5rem 1rem;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   background-color: transparent;
   color: var(--text-color);
   cursor: pointer;
@@ -682,6 +689,115 @@ main .contact .options .form-sec form .submit input:hover {
 main .contact .options .socials {
   width: 50%;
   height: 100%;
-  border: 1px solid var(--text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+
+main .contact .options .socials:hover {
+  background: var(--light-shade);
+}
+
+main .contact .options .socials .social-icons {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .contact .options .socials .social-icons .header {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact .options .socials .social-icons .header h1 {
+  font-size: 24px;
+}
+
+main .contact .options .socials .social-icons .links {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+main .contact .options .socials .social-icons .links i {
+  font-size: 38px;
+  color: var(--text-color);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+main .contact .options .socials .social-icons .links i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .contact .options .socials .social-icons .links .fa-linkedin-in:hover {
+  color: #3333f5;
+}
+
+main .contact .options .socials .social-icons .links .fa-twitter:hover {
+  color: #87aaeb;
+}
+
+main .contact .options .socials .social-icons .links .fa-instagram:hover {
+  color: #ec4863;
+}
+
+main .contact .options .socials .mail {
+  width: 100%;
+  height: 60%;
+}
+
+main .contact .options .socials .mail .header {
+  width: 100%;
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .contact .options .socials .mail .header h1 {
+  font-size: 22px;
+}
+
+main .contact .options .socials .mail .mail-link {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+main .contact .options .socials .mail .mail-link a {
+  color: var(--text-color);
 }
 /*# sourceMappingURL=style.css.map */
