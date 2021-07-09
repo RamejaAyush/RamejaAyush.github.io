@@ -388,7 +388,7 @@ main .life .all-life .story > div p {
 }
 
 main .work {
-  height: 250vh;
+  height: 280vh;
 }
 
 main .work .header {
@@ -400,7 +400,7 @@ main .work .header {
 
 main .card-projects {
   width: 100%;
-  height: 230vh;
+  height: 240vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,28 +408,14 @@ main .card-projects {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-main .card-projects .card-line {
-  padding-top: 5vh;
-  width: 100%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 15px;
+  margin-top: 10vh;
 }
 
-main .card-projects .card-line .card {
+main .card-projects .card {
   width: 80%;
   height: 40vh;
   background-color: var(--light-shade);
@@ -444,12 +430,12 @@ main .card-projects .card-line .card {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-main .card-projects .card-line .card:hover {
+main .card-projects .card:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
 }
 
-main .card-projects .card-line .card .img-pro {
+main .card-projects .card .img-pro {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -463,7 +449,7 @@ main .card-projects .card-line .card .img-pro {
           align-items: center;
 }
 
-main .card-projects .card-line .card .img-pro img {
+main .card-projects .card .img-pro img {
   display: inline-block;
   width: 95%;
   height: 90%;
@@ -471,7 +457,7 @@ main .card-projects .card-line .card .img-pro img {
      object-fit: cover;
 }
 
-main .card-projects .card-line .card .desc-pro {
+main .card-projects .card .desc-pro {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -483,7 +469,7 @@ main .card-projects .card-line .card .desc-pro {
           flex-direction: column;
 }
 
-main .card-projects .card-line .card .desc-pro .name {
+main .card-projects .card .desc-pro .name {
   width: 100%;
   height: 30%;
   display: -webkit-box;
@@ -497,19 +483,19 @@ main .card-projects .card-line .card .desc-pro .name {
           align-items: center;
 }
 
-main .card-projects .card-line .card .desc-pro .about-pro {
+main .card-projects .card .desc-pro .about-pro {
   width: 100%;
   height: 40%;
 }
 
-main .card-projects .card-line .card .desc-pro .about-pro p {
+main .card-projects .card .desc-pro .about-pro p {
   margin: 0 auto;
   width: 80%;
   text-align: center;
   line-height: 25px;
 }
 
-main .card-projects .card-line .card .desc-pro .redirect {
+main .card-projects .card .desc-pro .redirect {
   width: 100%;
   height: 20%;
   display: -webkit-box;
@@ -524,7 +510,7 @@ main .card-projects .card-line .card .desc-pro .redirect {
   gap: 15%;
 }
 
-main .card-projects .card-line .card .desc-pro .redirect a {
+main .card-projects .card .desc-pro .redirect a {
   text-decoration: none;
   color: var(--text-color);
   padding: 0.75rem;
@@ -534,7 +520,7 @@ main .card-projects .card-line .card .desc-pro .redirect a {
   transition: all 0.25s ease-in-out;
 }
 
-main .card-projects .card-line .card .desc-pro .redirect a:hover {
+main .card-projects .card .desc-pro .redirect a:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
 }
