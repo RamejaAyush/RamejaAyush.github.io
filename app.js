@@ -1,7 +1,22 @@
-// all variables
 const themeSwitch = document.querySelector('#theme');
 const body = document.body;
 const nav = document.querySelector('#nav');
+const images = document.querySelectorAll('.anim');
+
+// adding classes using IntersectionObserver
+observer = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+  if (entry.intersectionRatio > 0) {
+   entry.target.style.animation = `anim1 2s forwards ease-out`;
+  } else {
+   entry.target.style.animation = 'none';
+  }
+ });
+});
+// intersection observer
+images.forEach((image) => {
+ observer.observe(image);
+});
 
 // functions
 function changeTheme() {
