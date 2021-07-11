@@ -2,6 +2,17 @@ const themeSwitch = document.querySelector('#theme');
 const body = document.body;
 const nav = document.querySelector('#nav');
 const images = document.querySelectorAll('.anim');
+const fullBody = document.querySelector('.body-full');
+let timeout;
+
+function myFunction() {
+ timeout = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+ document.getElementById('loader').style.display = 'none';
+ fullBody.classList.add('active');
+}
 
 // adding classes using IntersectionObserver
 observer = new IntersectionObserver((entries) => {
