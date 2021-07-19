@@ -6,7 +6,7 @@ const fullBody = document.querySelector('.body-full');
 let timeout;
 
 function myFunction() {
- timeout = setTimeout(showPage, 3000);
+ timeout = setTimeout(showPage, 1500);
 }
 
 function showPage() {
@@ -18,7 +18,7 @@ function showPage() {
 observer = new IntersectionObserver((entries) => {
  entries.forEach((entry) => {
   if (entry.intersectionRatio > 0) {
-   entry.target.style.animation = `anim1 2s forwards ease-out`;
+   entry.target.style.animation = `anim1 1s forwards ease-out`;
   } else {
    entry.target.style.animation = 'none';
   }
